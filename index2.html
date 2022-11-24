@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <style>
-        nav ul li{
-            color: green;
-        }
+    <style>
+    div h1{
+        color: blue;
+    }
 
-        .selecionado{
-            color: blue;
-        }
+    div p em{
+        color: red;
+    }
 
-        article h1{
-            color: green;
-        }
+    div p + p em{
+        color: blue;
+    }
 
-        article .selecionado{
-            color: red;
-        }
+    #principal article h1{
+        color: green;
+    }
 
-     </style>
+    article p{
+        color: blue;
+    }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Item 1</li>
-            <li class="selecionado">Item 2</li>
-        </ul>
-    </nav>
-    <article>
-        <h1>Titulo</h1>
-        <p class="selecionado">
-            Paragrafo
-        </p>
-    </article>
+    <div id="principal">
+        <h1>TITULO AZUL</h1>
+        <P>Paragrafo com <em>ênfase nessa parte vermelho aqui</em></P>
+        <P>Paragrafo com <em>ênfase nessa parte azul aqui</em></P>
+        <article>
+              <h1>TITULO INTERNO VERDE</h1>
+              <p>
+                  PARAGRAFO COM COR AZUL 
+              </p>
+        </article>
+    </div>
 </body>
 </html>
